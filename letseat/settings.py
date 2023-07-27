@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['lets-eat-0870a5c41672.herokuapp.com', '8000-mristimaki-letseatpp4-afasvru6gqt.ws-eu102.gitpod.io']
+ALLOWED_HOSTS = ['lets-eat-0870a5c41672.herokuapp.com', '8000-mristimaki-letseatpp4-xrbvflwcgue.ws-eu102.gitpod.io']
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'blog',
 ]
 
