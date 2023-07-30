@@ -1,3 +1,25 @@
 body {
-    background-color: #FEFAE0;
+    background-color: #F7F3F2;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.image-container {
+    position: relative;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #223021;
+}
+
+.post-link:hover {
+    color: #364631;
+}
+
+.page-link {
+    text-decoration: none;
 }

@@ -28,24 +28,35 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Let's Eat</a>
+          <a class="navbar-brand" href="{% url 'home' %}">Let's Eat</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
+                 href="{% url 'home' %}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
+                 href="{% url 'about' %}">About</a>
+              </li>
+              {% if user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link {% if request.path == about_url %}active{% endif %}"
+                 href="{% url 'logout' %}">Logout</a>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                <a class="nav-link {% if request.path == register_url %}active{% endif %}"
+                 href="{% url 'register' %}">Register</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Register</a>
+                <a class="nav-link {% if request.path == signin_url%}active{% endif %}"
+                 href="{% url 'login' %}">Login</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sign In</a>
-              </li>
+              {% endif %}
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -55,8 +66,15 @@
         </div>
       </nav>
 
-    <!-- Blog content -->
+    <main>
+    {% block content %}
+      <!-- Blog content -->
+    {% endblock %}
+    </main>
 
     <!-- Footer -->
+    <footer class="footer">
+      <p class="text-center">Made by Maryam Rutqvist Ristimäki</p>
+    </footer>
 </body>
 </html>
