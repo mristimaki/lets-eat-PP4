@@ -11,15 +11,21 @@ body {
     position: relative;
 }
 
-.post-link {
+.post-link,
+.page-link {
     text-decoration: none;
     color: #223021;
 }
 
-.post-link:hover {
+.post-link:hover,
+.page-link:hover {
     color: #364631;
 }
 
-.page-link {
-    text-decoration: none;
+.footer-bg {
+    background-color: #364631;
+    color: #F7F3F2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

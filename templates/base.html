@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,21 +41,21 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link {% if request.path == about_url %}active{% endif %}" aria-current="page"
-                 href="{% url 'about' %}">About</a>
+                 href="#">About</a>
               </li>
               {% if user.is_authenticated %}
               <li class="nav-item">
                 <a class="nav-link {% if request.path == about_url %}active{% endif %}"
-                 href="{% url 'logout' %}">Logout</a>
+                 href="#">Logout</a>
               </li>
               {% else %}
               <li class="nav-item">
                 <a class="nav-link {% if request.path == register_url %}active{% endif %}"
-                 href="{% url 'register' %}">Register</a>
+                 href="#">Register</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link {% if request.path == signin_url%}active{% endif %}"
-                 href="{% url 'login' %}">Login</a>
+                 href="#">Login</a>
               </li>
               {% endif %}
             </ul>
@@ -73,7 +74,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer mt-auto py-3 footer-bg">
       <p class="text-center">Made by Maryam Rutqvist Ristimäki</p>
     </footer>
 </body>
