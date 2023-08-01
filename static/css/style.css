@@ -11,6 +11,7 @@ body {
     position: relative;
 }
 
+/* ----------------------------------- Page links */
 .post-link,
 .page-link {
     text-decoration: none;
@@ -19,13 +20,39 @@ body {
 
 .post-link:hover,
 .page-link:hover {
-    color: #364631;
+    color: #4E6547;
+    transition: 0.3s ease;
 }
+
+/* ----------------------------------- Footer */
 
 .footer-bg {
     background-color: #364631;
     color: #F7F3F2;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+}
+
+#socialmedia {
+    text-decoration: none;
+    text-align: center;
+}
+
+#socialmedia li {
+    display: inline;
+    color: #F7F3F2;
+}
+
+#socialmedia i.fa-instagram,
+i.fa-utensils {
+    color: #F7F3F2;
+    margin: 1%;
+    font-size: 20px;
+}
+
+#socialmedia i.fa-instagram:hover {
+    color: #4E6547;
+}
+
+#socialmedia i.fa-utensils:hover {
+    color: #4E6547;
 }
