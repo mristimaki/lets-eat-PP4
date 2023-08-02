@@ -7,9 +7,11 @@ body {
 
 /* ----------------------------------- Navigation bar */
 .navbar-brand {
-    font-weight: bold;
     font-size: 30px;
+    font-weight: 700;
     padding: 0;
+    margin-left: 25px;
+    color: #364631;
 }
 
 .btn-search {
@@ -17,14 +19,18 @@ body {
     color: #F7F3F2;
 }
 
-.btn-search:hover {
-    background-color: #F7F3F2;
-    border-color: #364631;
+.navbar-toggler {
+    border: 0;
+}
+
+.nav-link {
+    font-size: 20px;
+    margin-right: 20px;
     color: #364631;
 }
 
-.navbar-toggler {
-    border: 0;
+.nav-link:hover {
+    color: #4E6547;
 }
 
 /* ----------------------------------- Image header */
