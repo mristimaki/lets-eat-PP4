@@ -34,7 +34,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-right">
               <li class="nav-item">
                 <a class="nav-link {% if request.path == home_url %}active{% endif %}" aria-current="page"
                  href="{% url 'home' %}">Home</a>
@@ -55,10 +55,6 @@
               </li>
               {% endif %}
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
@@ -66,7 +62,7 @@
       <!-- Image header -->
       <div class="container-fluid image-header">
         <div class="row">
-          <div class="col-12 mt-5">
+          <div class="col-12 mt-5 intro-header">
             <h1>This is the description of the blog.</h1>
             <p>And some additional information about the recepies.</p>
           </div>
@@ -80,7 +76,6 @@
     </main>
 
     <!-- Footer -->
-    <!-- Fixa så att den är fast vid botten av sidan samt länkar är för långt till höger -->
     <footer class="footer footer-bg">
       <p class="text-center">All recipes made by Hanna Olvenmark</p>
       <ul id="socialmedia">
