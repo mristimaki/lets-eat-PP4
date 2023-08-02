@@ -27,7 +27,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+    <nav class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="{% url 'home' %}">Let's Eat</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,6 +62,16 @@
           </div>
         </div>
       </nav>
+
+      <!-- Image header -->
+      <div class="container-fluid image-header">
+        <div class="row">
+          <div class="col-12 mt-5">
+            <h1>This is the description of the blog.</h1>
+            <p>And some additional information about the recepies.</p>
+          </div>
+        </div>
+      </div>
 
     <main>
     {% block content %}

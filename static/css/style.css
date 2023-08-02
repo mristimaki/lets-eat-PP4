@@ -1,7 +1,22 @@
 body {
     background-color: #F7F3F2;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
 }
 
+/* ----------------------------------- Image header */
+.image-header {
+    height: 55vh;
+    background: url("../images/pexels-taryn-elliott-4909104.jpg") no-repeat bottom right fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: #F7F3F2;
+    margin-top: 20px;
+}
+
+/* ----------------------------------- Recipe cards */
 .card {
     border: none;
     background-color: transparent;
@@ -25,7 +40,6 @@ body {
 }
 
 /* ----------------------------------- Footer */
-
 .footer-bg {
     background-color: #364631;
     color: #F7F3F2;

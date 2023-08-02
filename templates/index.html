@@ -6,7 +6,7 @@
     <div class="row">
 
         <!-- List of recipes -->
-        <div class="col-10 mt-5">
+        <div class="col-12 mt-3">
             <div class="row">
             {% for post in post_list %}
                 <div class="col-md-4">
@@ -14,19 +14,18 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top" src="https://undertian.com/wp-content/uploads/2020/05/IMG_0288-1308x1308.jpg" 
+                                <img class="card-img-top mb-3" src="https://undertian.com/wp-content/uploads/2020/05/IMG_0288-1308x1308.jpg" 
                                 alt="placeholder image">
                                 {% else %}
-                                <img class="card-img-top" src="{{ post.featured_image.url }}" alt="{{ post.title }}">
+                                <img class="card-img-top mb-3" src="{{ post.featured_image.url }}" alt="{{ post.title }}">
                                 {% endif %}
-                                
                             </div>
                             <a href="#" class="post-link">
                                 <h2>{{ post.title }}</h2>
                                 <p>{{ post.excerpt }}</p>
                             </a>
                             <hr />
-                            <p class="card-text text-muted-h6">{{ post.created.on }} <i 
+                            <p class="card-text text-muted-h6 mb-3">{{ post.created.on }} <i 
                                 class="fa-regular fa-heart"></i>{{ post.number_of_likes}} <i class="fa-regular fa-comment"></i>{{ post.number_of_comments }}</p>
                         </div>
                     </div>
