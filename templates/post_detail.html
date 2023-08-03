@@ -1,4 +1,52 @@
-{% extends base.html %}
+{% extends 'base.html' %} 
 {% block content %}
+
+<!-- The recipe name and picture should go in the image-header and change for each post-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 card mb-4 mt-3 left top">
+            <div class="card-body">
+                <p class="card-text">
+                    <!-- Recipe text goes in here -->
+                    {{ post.content | safe }}
+                </p>
+
+                <!-- Number of likes and comments goes here-->
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fa-regular fa-heart"></i>{{ post.number_of_likes }}
+                    </div>
+                    <div class="col-1">
+                        {% with comments.count as total_comments %}
+                        <i class="fa-regular fa-comment"></i>{{ post.number_of_comments }}
+                        {{ total_comments }}
+                        {% endwith %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comments goes here -->
+    <div class="row">
+        <div class="col-md-8 card mb-4 mt-3">
+            <h3>Comments:</h3>
+            <div class="card-body">
+                {% for comment in comments %}
+                <div class="comments">
+                    <p>
+                        {{ comment.name }}
+                        <span class="text-muted font-weight-normal">
+                            {{ comment.creaded_on }}
+                        </span> wrote:
+                    </p>
+                    {{ comment.body | linebreaks }}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
