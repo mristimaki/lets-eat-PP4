@@ -25,6 +25,9 @@ class RecipeDetail(View):
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
+        # commented = False
+        # if post.likes.filter(id=self.request.user.id).exists():
+        #     commented = True
         
         return render(
             request,
@@ -33,5 +36,6 @@ class RecipeDetail(View):
                 "post": post,
                 "comments": comments,
                 "liked": liked
+                # "commented": commented
             },
         )

@@ -32,6 +32,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['lets-eat-0870a5c41672.herokuapp.com', '8000-mristimaki-letseatpp4-xrbvflwcgue.ws-eu102.gitpod.io']
 
+# To prevent 500 errors during login and registrarion 
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # Application definition
 
@@ -41,12 +43,23 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
     'django_summernote',
     'blog',
 ]
+
+# Site id so that django can handle multiple sites
+SITE_ID = 1
+
+# Redirection so the site redirects to home page when logged in/out
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

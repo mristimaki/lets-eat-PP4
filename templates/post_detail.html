@@ -2,7 +2,7 @@
 {% block content %}
 
 <!-- The recipe name and picture should go in the image-header and change for each post-->
-
+<!-- Behöver fixa så att det ser bra ut även på mobil -->
 <div class="container">
     <div class="row">
         <div class="col-8 card mb-4 mt-3 left top">
@@ -13,11 +13,12 @@
                 </p>
 
                 <!-- Number of likes and comments goes here-->
+                <!-- Behöver se över hur likes/comments ser ut vid mindre skärm -->
                 <div class="row">
-                    <div class="col-1">
+                    <div class="col-2">
                         <i class="fa-regular fa-heart"></i>{{ post.number_of_likes }}
                     </div>
-                    <div class="col-1">
+                    <div class="col-2">
                         {% with comments.count as total_comments %}
                         <i class="fa-regular fa-comment"></i>{{ post.number_of_comments }}
                         {{ total_comments }}
@@ -31,7 +32,7 @@
     <!-- Comments goes here -->
     <div class="row">
         <div class="col-md-8 card mb-4 mt-3">
-            <h3>Comments:</h3>
+            <h5 style="padding: 16px;">Comments:</h5>
             <div class="card-body">
                 {% for comment in comments %}
                 <div class="comments">

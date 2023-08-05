@@ -34,7 +34,7 @@ body {
 }
 
 /* ----------------------------------- Image header */
-.image-header {
+.image-header-home {
     height: 50vh;
     background: url("../images/pexels-taryn-elliott-4909104.jpg") no-repeat bottom right fixed;
     background-size: cover;
@@ -69,6 +69,21 @@ body {
 .page-link:hover {
     color: #4E6547;
     transition: 0.3s ease;
+}
+
+.signin-link {
+    color: #4E6547;
+}
+
+/* ----------------------------------- Buttons */
+.btn-signin {
+    background-color: #4E6547;
+    color: #F7F3F2;
+}
+
+.btn-signin:hover {
+    background-color: #ffffff;
+    color: #4E6547;
 }
 
 /* ----------------------------------- Footer */
