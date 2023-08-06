@@ -1,5 +1,6 @@
 {% extends 'base.html' %} 
 {% block content %}
+{% load crispy_forms_tags %}
 
 <!-- The recipe name and picture should go in the image-header and change for each post-->
 <!-- Behöver fixa så att det ser bra ut även på mobil -->
@@ -36,15 +37,37 @@
             <div class="card-body">
                 {% for comment in comments %}
                 <div class="comments">
-                    <p>
+                    <p style="font-weight: 500;">
                         {{ comment.name }}
-                        <span class="text-muted font-weight-normal">
-                            {{ comment.creaded_on }}
-                        </span> wrote:
+                        <span class="text-muted font-weight-bold">
+                            {{ comment.created_on }}
+                        </span>
                     </p>
                     {{ comment.body | linebreaks }}
                 </div>
                 {% endfor %}
+            </div>
+        </div>
+
+        <!-- Comment form -->
+        <div class="col-md-4 card mb-4 mt-3">
+            <div class="card-body">
+                {% if commented %}
+                <div class="alert alert-success" role="alert">
+                    Your comment is awaiting approval.
+                </div>
+                {% else %}
+
+                {% if user.is_authenticated %}
+                <h5>Leave a comment:</h5>
+                <p>Posting as: {{ user.username }}</p>
+                <form method="post" style="margin-top: 1.3em;">
+                {{ comment_form | crispy }}
+                {% csrf_token %}
+                <button type="submit" class="btn btn-signin">Submit</button>
+                </form>
+                {% endif %}
+                {% endif %}
             </div>
         </div>
     </div>
