@@ -36,7 +36,7 @@ body {
 /* ----------------------------------- Image header */
 .image-header-home {
     height: 50vh;
-    background: url("../images/pexels-taryn-elliott-4909104.jpg") no-repeat bottom right fixed;
+    background: no-repeat bottom right fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
