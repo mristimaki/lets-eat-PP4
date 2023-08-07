@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'blog',
+    'about',
 ]
 
 # Site id so that django can handle multiple sites
