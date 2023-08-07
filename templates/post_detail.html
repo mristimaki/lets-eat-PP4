@@ -17,11 +17,26 @@
                 <!-- Behöver se över hur likes/comments ser ut vid mindre skärm -->
                 <div class="row">
                     <div class="col-2">
-                        <i class="fa-regular fa-heart"></i>{{ post.number_of_likes }}
+                        {% if user.is_authenticated %}
+                        <form class="d-inline" action="{% url 'post_likes' post.slug %}" method="POST">
+                            {% csrf_token %}
+                            {% if liked %}
+                            <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like"><i 
+                                class="fa-solid fa-heart"></i></button>
+                            {% else %}
+                            <button type="submit" name="blogpost_id" value="{{ post.slug }}" class="btn-like"><i 
+                                class="fa-regular fa-heart"></i></button>
+                            {% endif %}
+                        </form>
+                        {% else %}
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        {% endif %}
+                        <span>{{ post.number_of_likes }}</span>
                     </div>
+
                     <div class="col-2">
                         {% with comments.count as total_comments %}
-                        <i class="fa-regular fa-comment"></i>{{ post.number_of_comments }}
+                        <span><i class="fa-regular fa-comment"></i>{{ post.number_of_comments }}</span>
                         {{ total_comments }}
                         {% endwith %}
                     </div>
