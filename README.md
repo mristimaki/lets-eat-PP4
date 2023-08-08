@@ -1,108 +1,198 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Let's Eat Project Portfolio 4
+Insert image of responsive 
 
-Welcome mristimaki,
+And some info about the blog
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## UX
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+### Goals
 
-## Gitpod Reminders
+#### Visitor Goals
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+**The target audience for Let's Eat:**
+List of targer audience
 
-`python3 -m http.server`
+**User goals are:**
+List of user goals
 
-A blue button should appear to click: _Make Public_,
+**Let's Eat will fill these needs by:**
+List how the blog will fill these needs
 
-Another blue button should appear to click: _Open Browser_.
+#### Business Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+**The Business goals of Let's Eat are:**
 
-A blue button should appear to click: _Make Public_,
+- Present a good and clear design to gain interest.
 
-Another blue button should appear to click: _Open Browser_.
+**User Stories** 
+Insert image of user stories and give information about the agile approach.
+List the user stories down below
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* As a user ...
 
-To log into the Heroku toolbelt CLI:
+## Visual Design
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### The Fonts
+I choosed the fonts for this webdesign via the [fontpair](https://www.fontpair.co/all) website.
+I chose these particular fonts because I wanted a elegant and clean look to the fonts.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### The Colors
+Insert image of the colors!
+ 
 
-------
+### The Images
+Insert image of the images on homepage!
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### The Icons
+Insert image of the icons in footer!
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+The icons are taken from the [Font Awesome](https://fontawesome.com/) website. 
+<br>
+These are found in the footer for social media links.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Features
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Page Elements
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+#### Navigation bar
+Insert image of navigation bar!
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+<br>
+The navigation bar is located at the top of every page, and is visible even though you scroll down the page, making it easier for the user to navigate back and forth trough the pages. 
+<hr>
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+#### Footer
+Insert image of footer!
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<br>
+The footer is located at the bottom of every page, stating who's the author of all recipes and with links to her social media platforms. I've used a simple design and a hover effect to the icons so that the user may get interested in visiting the social media links provided.
+<hr>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+#### The landing page
+Insert image of landing page!
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<br>
+Some description about the landing page goes here
+<br>
+And some more description
+<hr>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+#### About page
+Insert image of about page!
+<br>
+Information about the about page
+<hr>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+#### Sign Up page
+Insert picture of Sign up page
+<br>
+Some information about this page
+<hr>
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### Sign In page
+Insert picture of Sign in page
+<br>
+Some information about this page
+<hr>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+#### Logout page
+Insert picture of Logout page
+<br>
+Some information about this page
+<hr>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Feature Ideas
+- I want to add a search field so that the user can search for a specific recipe or ingredient.
+- For the logged in user to be able to edit or delete their own comments.
 
-------
+## Technologies used
 
-## FAQ about the uptime script
+### Languages
+* HTML: Page markup.
+* CSS: Styling.
+* PYTHON:
+* JAVASCRIPT:
+* BOOTSTRAP:
 
-**Why have you added this script?**
+### Libraries
+* [Google Fonts](https://fonts.google.com/): Font styles. 
+* [Font Awesome](https://fontawesome.com/): Used for icons.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Platforms
+* [GitHub](https://github.com/): Storing code remotly and deployment.
+* [Gitpod](https://www.gitpod.io/): IDE for project development.
 
-**How will this affect me?**
+### Other Tools
+* [Favicon Generator](https://www.favicon-generator.org/): Favicon.
+* [Tiny png](https://tinypng.com/): Compression of images.
+* [Coloors](https://coolors.co/ff9052-ffba5c-f9cc89-ffffff-47525e): Creating color palette.
+* [Am I Responsive](https://ui.dev/amiresponsive): For responsive design images.
+* [Marvelapp](https://marvelapp.com/): For wireframes.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Testing
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+The design of Let's Eat should be responsive so that when looked at in mobile phones the images should be stacked over each other in Home-page so that the user can see the images better. The blog should be responsive despite which device you're using, since I've used Bootstrap for most of my design features throughout the blog. I've tested all pages both for desktop and mobile via the **Lighthouse** tool and got these results:
+### Desktop
+Insert image of lighthouse results
+### Mobile 
+Insert image of lighthouse results
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### General testing
+- I have tested my code troughout the buildup with the **inspect** tool to see what impact the code made.
+- I have firstly tested if the code works with mobile devices and then checked the outcome on larger devices. 
+- I have used my own mobile phone to check if the website works as it is intended. 
+- I have used not only the preview but also the deployed website to check if everything works and looks as intended.
+- I have used automated testing with the built in Unittest. You can find the different tests.py in the about directory
 
-**So….?**
+### Methods
+1. HTML has been validated in the [W3C HTML5 Validator](https://validator.w3.org/)
+2. CSS has been validated in the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+3. Links has been checked in the [W3C Link Checker](https://validator.w3.org/checklink)
+4. I've used the [W3Schools](https://www.w3schools.com/) tutorials and references troughout my project if there was anything that I got stuck on or needed to be reminded of a certain element or tag.
+5. I've used the slackoverflow(link) to get help with errors during the development process.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Bugs
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Unfixed bugs
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+## Deployment
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### GitHub Deployment
+- This site was deployed to Heroku. The steps to deploy are as follows.
+  
 
----
+The live link can be found here: 
 
-Happy coding!
+#### Clone GitHub repositry instructions
+It is possible to clone this repositry, to be able to work alongside me for this project it is required to have a free GitHub account and then go trough the steps as follows. 
+<br>
+1. Log in to your GitHub account and navigate to: 
+2. In the GitHub repository, navigate to **Code** and `copy` the **HTTPS link**.
+3. Write `git clone` in terminal, paste the link and press `enter`.
+4. Now you should have everything you need to work on the project.
+5. Happy coding!
+
+## Credit and Contact
+
+### Media
+
+List the different media sources (images and links)
+
+### Content
+- The information in Inspiration page is taken from:
+  - [Portionen under tian](https://undertian.com/?s=&post_type=recept&cat=7t&orderby=post_date)
+
+### Contact
+
+#### Please contact me at
+  - **Email** `rosanna.ristimaki@gmail.com`
+  - **Skype** [Maryam Rutqvist Ristimaki](https://join.skype.com/invite/xfUYvIMqTjPp)
+
+I've chosen not to include any contact information within the webpage since this is not a real website yet but if it would be in the future I would put this along with the Sign Up page as well as in the footer with social media links. 
+<br>
+<br>
+*I also want to give thanks to the tutors that has been guiding me troughout this project.*
+
