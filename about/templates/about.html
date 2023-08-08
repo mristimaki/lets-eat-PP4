@@ -1,13 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
+{% load static %}
 
 <!-- About page that gets the about content from the app -->
 <div class="container">
     <div class="row">
         <div class="col-12 card mb-4 mt-3">
-            <h2>{{ about.title }}</h2>
+            <h2>Welcome to Let's Eat</h2>
             <hr />
-            <p>{{ about.content | safe }}</p>
+            <p>This recipe blog is created for my Project Portfolio 4 for my Diploma in Full Stack Software Development at Code Institute. 
+                <br>
+                I chose to create a blog with content that is close to my heart. 
+                <br>
+                The specific recipes along with the beautiful recipe pictures are all made by the lovely Hanna Olvenmark that has created a Swedish recipe website along with books about how to make wholesome, delicious and cheap food. You can find her website and instagram at the social media links below. 
+                <br>
+                <br>
+                I chose to create this particular blog since I'm passionate about being out in nature as well as I love cooking and discovering new recipes to try. Connecting to nature is good for all, young and old, so by inspiring people to go out more, make a day trip or going for a longer hike, why not top the experience with some delicious food? 
+                <br>
+                <br>
+                Thank you for looking in to this blog, and be brave, be curious about life and why we're set to be here!</p>
         </div>
     </div>
 </div>

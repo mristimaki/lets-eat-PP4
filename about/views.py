@@ -12,10 +12,8 @@ class AboutPage(View):
         """
         View that renders about page
         """
+
         return render(
             request,
-            "about.html",
-            {
-                "about": about
-            },
+            "about.html"
         )
