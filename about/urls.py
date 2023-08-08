@@ -1,4 +1,6 @@
 from . import views
 from django.urls import path
 
-# create paths here 
+urlpatterns = [
+    path('', views.AboutPage, name='about'),
+]

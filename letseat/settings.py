@@ -51,10 +51,10 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    'django_summernote',
     'crispy_forms',
-    'blog',
+    'django_summernote',
     'about',
+    'blog',
 ]
 
 # Site id so that django can handle multiple sites

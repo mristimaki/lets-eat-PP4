@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- About page that gets the about content from the app -->
+<div class="container">
+    <div class="row">
+        <div class="col-12 card mb-4 mt-3">
+            <h2>{{ about.title }}</h2>
+            <hr />
+            <p>{{ about.content | safe }}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
