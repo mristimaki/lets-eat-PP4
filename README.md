@@ -38,8 +38,6 @@ The Agile Methology was used to plan this project, which was implemented through
 - **Comment on a post:** As a **user** I can **leave comments on a recipe** so that **I can interact with the content**
 - **Like/Unlike:** As a **user** I can **like or unlike a recipe** so that **I can interact with the content**
 <br>
-<img width="1078" alt="user-stories" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/d879651a-3e9a-4135-8ad2-fc4566ee942d">
-<br>
 
 ## Tasks
 The tasks during the development of this project was closely followed by Code Institutes "I Think Therefore I Blog" walkthrough project in this particular order:
