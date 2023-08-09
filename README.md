@@ -61,7 +61,7 @@ The tasks during the development of this project was closely followed by Code In
 ## Visual Design
 
 ### Wireframes
-I used [Marvelapp](https://marvelapp.com/) to create my Wireframes. This is how I first intended the look of the blog but during development I decided to not include all of the features as stated in the beginning. 
+I used Marvelapp to create my Wireframes. This is how I first intended the look of the blog but during development I decided to not include all of the features as stated in the beginning. 
 
 #### Landing page desktop 
 <img width="674" alt="homepage_desktop" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/56d0e7af-db4d-4e98-9716-cb7c143a97b6">
@@ -85,12 +85,12 @@ I chose these particular colors that reminds me of nature and also provides a cl
 
 ### The Images
 <img width="1061" alt="landing_page_1" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/dbb4a0b2-6c9c-43a1-9ccd-a331ef35c46b">
-The images of the recipes is all taken from [Portionen Under Tian](https://undertian.com/?s=&post_type=recept&cat=7t&orderby=post_date)'s recipe blog 
+The images of the recipes is all taken from [Portionen under tian](https://undertian.com/?s=&post_type=recept&cat=7t&orderby=post_date) recipe blog 
 
 ### The Icons
 <img width="964" alt="footer" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/94846f13-d419-4a51-94d8-dbca761bc145">
 <br>
-The icons are taken from the [Font Awesome](https://fontawesome.com/) website. 
+The icons are taken from the Fontawesome website. 
 <br>
 These are found in the footer for social media links.
 
@@ -272,11 +272,7 @@ It is possible to clone this repositry, to be able to work alongside me for this
 
 ## Credit and Contact
 
-### Media
-
-List the different media sources (images and links)
-
-### Content
+### Content and Media
 - The information in Inspiration page is taken from:
   - [Portionen under tian](https://undertian.com/?s=&post_type=recept&cat=7t&orderby=post_date)
 
