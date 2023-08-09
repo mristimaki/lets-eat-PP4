@@ -33,10 +33,10 @@ body {
     color: #4E6547;
 }
 
-/* ----------------------------------- Image header */
-.image-header-home {
+/* ----------------------------------- Page header */
+.page-header {
     height: 50vh;
-    background: url("../images/pexels-taryn-elliott-4909104.jpg") no-repeat bottom right;
+    background-color: #223021;
     background-size: cover;
     display: flex;
     justify-content: center;
