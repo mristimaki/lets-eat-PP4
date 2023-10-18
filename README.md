@@ -1,7 +1,7 @@
 # Let's Eat Project Portfolio 4
 <img width="1061" alt="landing_page_1" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/ba1ab738-4b32-4868-bf55-b0264f11526e"> 
 
-Let's Eat is a recipe blog as my Project Portfolio 4 for my Diploma in Full Stack Software Development at Code Institute.
+[Let's Eat](https://lets-eat-0870a5c41672.herokuapp.com/) is a recipe blog as my Project Portfolio 4 for my Diploma in Full Stack Software Development at Code Institute.
 <br>
 <br>
 This blog is not as intended from the beginning, I wanted the blog to have more features but I decided to make the project more simple since I didn't have enough time for me to deliver a more complex web application. It got too much for me and I realized that I would not be able to deliver a good working project on the time that I had left since I fell behind a bit during my studies.
