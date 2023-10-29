@@ -167,12 +167,6 @@ Appearing at the end of each recipe, the comments appears as a list of comments 
 
 ### You can find all of the test related information in the [TESTING.md](https://github.com/mristimaki/lets-eat-PP4/blob/main/TESTING.md) file
 
-### Methods
-1. HTML has been validated in the [W3C HTML5 Validator](https://validator.w3.org/)
-2. CSS has been validated in the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-3. I've used the [W3Schools](https://www.w3schools.com/) tutorials and references troughout my project if there was anything that I got stuck on or needed to be reminded of a certain element or tag.
-4. I've used the [Stack Overflow](https://stackoverflow.com/) to get help with errors during the development process.
-
 ### Bugs
 When adding the RecipeDetail view I got an error that Django pointed to my bootstrap CDN link, it turned out not being the link at all but that I had added the count() function to my RecipeDetail view to count the number of comments, although I already had this functioning here, therefore I got the error:
 <img width="565" alt="error-screenshot" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/e71a948c-f490-407c-907d-e2b4a0a7692e">
