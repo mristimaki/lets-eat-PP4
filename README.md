@@ -17,28 +17,6 @@ I have created a simple recipe blog with a simplistic design filled with colors 
 - This blog is developed in a visually pleasing and informative design that is intuitive and easy to navigate in.
 - The blog provides the user to easily sign in and be able to like/unlike and comment on each recipe.
 
-### Agile Methology
-The Agile Methology was used to plan this project, which was implemented through GitHub's Project board. Through the use of the Kanban board I've divided the processes in to a few different sections as follows:
-- **To do** (All of the user stories was firstly put in the "To do" section)
-- **In progress** (They where then bit by bit moved in to "In progress" section during the development)
-- **Done** (And finally moved to the "Done" section when the development was completed)
-<img width="1078" alt="user-stories" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/4828b0b0-fb91-48f3-a1c1-ed8ec6ee1f6a">
-
-#### User/Admin Stories 
-
-- **Manage posts:** As a **admin** I can **Create, Read, Update and Delete posts** so that **I can manage my blog content**
-- **Create drafts:** As a **admin** I can **create draft posts** so that **I can choose to finish my content later**
-- **Approve comments:** As a **admin** I can **approve or disapprove a comment** so that **I can filter out the comments and prevent bad behavior/bullying**
-- **View list of recipes:** As a **user** I can **view a list of recipes** so that **I can select which one I want to read**
-- **View likes:** As a **user/admin** I can **see the number of likes on each recipe** so that **I can see which one is most popular**
-- **Open a post:** As a **user** I can **click on a recipe title** so that **I can read the full recipe**
-- **View comments:** As a **user/admin** I can **see the comments on a individual recipe** so that **I can read the conversation**
-- **Registration:** As a **user** I can **register an account** so that **I can comment and like posts**
-- **View number of comments:** As a **user/admin** I can **view the number of comments on each recipe** so that **I can see if someone has interacted with the content**
-- **Comment on a post:** As a **user** I can **leave comments on a recipe** so that **I can interact with the content**
-- **Like/Unlike:** As a **user** I can **like or unlike a recipe** so that **I can interact with the content**
-<br>
-
 ## Tasks
 The tasks during the development of this project was closely followed by Code Institutes "I Think Therefore I Blog" walkthrough project in this particular order:
 
@@ -187,17 +165,7 @@ Appearing at the end of each recipe, the comments appears as a list of comments 
 
 ## Testing
 
-The design of Let's Eat should be responsive so that when looked at in mobile phones the images should be stacked over each other in Home-page so that the user can see the images better. The blog should be responsive despite which device you're using, since I've used Bootstrap for most of my design features throughout the blog. I've tested all pages both for desktop and mobile via the **Lighthouse** tool and got these results:
-### Desktop
-
-### Mobile 
-
-### General testing
-- I have tested my code troughout the buildup with the **inspect** tool to see what impact the code made.
-- I have firstly tested if the code works with mobile devices and then checked the outcome on larger devices. 
-- I have used my own mobile phone to check if the website works as it is intended. 
-- I have used not only the preview but also the deployed website to check if everything works and looks as intended.
-- I have used automated testing with the built in Unittest. You can find the different tests.py in the about directory.
+### You can find all of the test related information in the [TESTING.md](https://github.com/mristimaki/lets-eat-PP4/blob/main/TESTING.md) file
 
 ### Methods
 1. HTML has been validated in the [W3C HTML5 Validator](https://validator.w3.org/)
