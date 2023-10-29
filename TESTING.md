@@ -42,3 +42,9 @@ I've tested all pages both for desktop and mobile via the Lighthouse tool and go
 (insert image of results)
 
 ## General testing
+
+### Methods
+1. HTML has been validated in the [W3C HTML5 Validator](https://validator.w3.org/)
+2. CSS has been validated in the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+3. I've used the [W3Schools](https://www.w3schools.com/) tutorials and references troughout my project if there was anything that I got stuck on or needed to be reminded of a certain element or tag.
+4. I've used the [Stack Overflow](https://stackoverflow.com/) to get help with errors during the development process.
