@@ -34,7 +34,7 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['lets-eat-0870a5c41672.herokuapp.com', '8000-mristimaki-letseatpp4-xrbvflwcgue.ws-eu102.gitpod.io']
+ALLOWED_HOSTS = ['8000-mristimaki-letseatpp4-gc5npou7pwp.ws-eu111.gitpod.io', 'lets-eat-0870a5c41672.herokuapp.com']
 
 # To prevent 500 errors during login and registrarion 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
@@ -99,6 +99,14 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+AUTHENTICATION_BACKENDS = [
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by email
+    'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
 WSGI_APPLICATION = 'letseat.wsgi.application'
