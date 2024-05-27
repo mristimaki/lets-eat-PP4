@@ -30,11 +30,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.environ.get('DEBUG')
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['8000-mristimaki-letseatpp4-gc5npou7pwp.ws-eu111.gitpod.io', 'lets-eat-0870a5c41672.herokuapp.com']
+ALLOWED_HOSTS = ['8000-mristimaki-letseatpp4-gc5npou7pwp.ws-eu114.gitpod.io', 'lets-eat-0870a5c41672.herokuapp.com']
 
 # To prevent 500 errors during login and registrarion 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
