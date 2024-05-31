@@ -1,6 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
-
-def pagenotfound(request, exception):
-    """ Error 404 Handler """
-    return render(request, "error/error404.html", status=404)
+def custom_page_not_found(request, exception):
+    return render(request, "templates/404.html", {})

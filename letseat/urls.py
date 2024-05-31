@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import (
+    handler400, handler403, handler404, handler500
+)
 
-from views import pagenotfound
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +28,4 @@ urlpatterns = [
     path('', include('blog.urls'), name='blog_urls'),
 ]
 
-pagenotfound = 'letseat.views.pagenotfound'
+handler404 = 'letseat.views.custom_page_not_found'
