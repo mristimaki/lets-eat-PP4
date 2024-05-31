@@ -17,3 +17,10 @@ class AboutPage(View):
             request,
             "about.html"
         )
+
+
+def custom_404(request, exception):
+    """
+    Custom 404 view
+    """
+    return render(request, '404.html')
