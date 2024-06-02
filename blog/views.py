@@ -1,9 +1,10 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from .models import Post
 from .forms import CommentForm
+from .forms import EditCommentForm
 
 
 class PostList(generic.ListView):
@@ -85,3 +86,43 @@ class PostLikes(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+class EditComment(View):
+    """
+    class-based view to edit comments if logged in
+    """
+    def get(self, request, comment_id, *args, **kwargs):
+        comment = get_object_or_404(Comment, id=comment_id)
+        
+        if comment.email != request.user.email:
+            return redirect('recipe_detail', slug=comment.post.slug)
+        form = EditCommentForm(instance=comment)
+
+        return render(
+            request,
+            'edit_comment.html',
+            {
+                'form': form,
+                'comment': comment
+            }
+        )
+    
+    def post(self, request, comment_id, *args, **kwargs):
+        comment = get_object_or_404(Comment, id=comment_id)
+
+        if comment.email != request.user.email:
+            return redirect('recipe_detail', slug=comment.post.slug)
+        form = EditCommentForm(request.POST, instance=comment)
+
+        if form.is_valid():
+            form.save()
+            return redirect('recipe_detail', slug=comment.post.slug)
+        return render(
+            request,
+            'edit_comment.html',
+            {
+                'form': form,
+                'comment': comment
+            }
+        )
