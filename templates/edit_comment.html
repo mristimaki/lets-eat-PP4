@@ -5,7 +5,15 @@
 
 <div class="container-fluid">
     <div class="row">
-        <!-- edit comment pop up ? -->
+        <h2>Edit Comment</h2>
+
+        <!-- edit comment form if logged in -->
+        <form method="post">
+            {{ edit_comment | crispy }}
+            {% csrf_token %}
+            <button type="submit" class="btn btn-signin">Save changes</button>
+        </form>
+
     </div>
 </div>
 
