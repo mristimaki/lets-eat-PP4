@@ -1,5 +1,11 @@
 # Testing
 
+## General testing
+Since I have been on parental leave and still have a newborn at home, the studies took longer than expected due to lack of undisturbed time and lack of sleep. Therefore I will not be able to give the full amount of documentation of all the testing, since I had other priorities to get done first within the blog application. 
+<br>
+<br>
+But I'll provide images of the process and my checklist that I have followed during the development of this application.
+
 ## Manual testing
 
 During the development of this project, I've used GitHub's Project Board and throughout the use of the Kanban board I've divided the processes in to a few different sections as follows:
@@ -10,6 +16,7 @@ During the development of this project, I've used GitHub's Project Board and thr
 <br>
 <img width="1078" alt="user-stories" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/13c39e72-ede1-497d-85db-62dff9ac7e92">
 <br>
+<img width="1078" alt="userstory_process" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/d771a5bb-97ac-434c-88b7-bab3ac5f4ffd">
 
 #### User/Admin Stories
 
@@ -27,21 +34,10 @@ During the development of this project, I've used GitHub's Project Board and thr
 <br>
 During the development of this project I manually tested that the new features was working as expected both on desktops as well as mobile phones. I've used my own devives as well as sent the site to other users to test it out themselves on their devices. The features tested and results are as follows:
 <br>
-(Insert image of documentation)
+<img width="840" alt="letseat_checklist" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/97ae2e5e-a636-416d-bb4f-f6118aacd4bc">
 
 ### Design
 The design of Let's Eat should be responsive so that when looked at in mobile devices, the images should be stacked over each other in Home-page so that the user can see the images better. The blog should be responsive despite which device you're using, since I've used Bootstrap for most of my design features throughout the blog. 
-
-### Lighthouse
-I've tested all pages both for desktop and mobile via the Lighthouse tool and got these results:
-<br>
-#### Desktop
-(insert image of results)
-
-#### Mobile
-(insert image of results)
-
-## General testing
 
 ### Methods
 1. HTML has been validated in the [W3C HTML5 Validator](https://validator.w3.org/)
