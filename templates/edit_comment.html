@@ -10,7 +10,7 @@
         <form method="post">
             {{ form|crispy }}
             {% csrf_token %}
-            <button type="submit" class="btn btn-signin">Save changes</button>
+            <a href="{% url 'post_detail' comment.post.slug %}"><button type="submit" class="btn btn-signin">Save changes</button></a>
         </form>
 
     </div>

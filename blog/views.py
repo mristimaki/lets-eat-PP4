@@ -116,10 +116,10 @@ class EditComment(View):
 
         if form.is_valid():
             form.save()
-            return redirect('post_detail', args=[str(comment.post.slug)])
+            return HttpResponseRedirect(reverse('post_detail', args=[comment.post.slug]))
         return render(
             request,
-            'edit_comment.html',
+            'post_detail.html',
             {
                 'form': form,
                 'comment': comment
