@@ -247,6 +247,15 @@ It is possible to clone this repositry, to be able to work alongside me for this
 
 ## Credit and Contact
 
+### Credit
+I want to give a big thanks to the acessors for the feedback about this blog application. 
+<br>
+This is what has been updated after:
+1. View number of comments
+2. Function to edit comment if logged in
+3. Added steps to deployment in README
+4. Added information about testing during development
+
 ### Content and Media
 - The information in Inspiration page is taken from:
   - [Portionen under tian](https://undertian.com/?s=&post_type=recept&cat=7t&orderby=post_date)
