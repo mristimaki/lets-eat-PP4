@@ -168,21 +168,33 @@ Appearing at the end of each recipe, the comments appears as a list of comments 
 ### You can find all of the test related information in the [TESTING.md](https://github.com/mristimaki/lets-eat-PP4/blob/main/TESTING.md) file
 
 ### Bugs
+
+#### error adding RecipeDetail
 When adding the RecipeDetail view I got an error that Django pointed to my bootstrap CDN link, it turned out not being the link at all but that I had added the count() function to my RecipeDetail view to count the number of comments, although I already had this functioning here, therefore I got the error:
 <img width="565" alt="error-screenshot" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/e71a948c-f490-407c-907d-e2b4a0a7692e">
 <br>
 After taking out the count() function of my RecipeDetail view, it was up and running again. 
 <br>
 <br>
+#### url path to about page
 When adding the about page I could not get the url to work, after some debugging and finally getting help from a tutor we found out that because of the order I had placed the about path in, the url did not work. After re-arranging the order, the about page worked fine.
-<img width="492" alt="adding_about_page" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/5f017984-ebb7-44f4-85dc-6062fb2ba1b4">
-
-### Unfixed bugs
-<img width="572" alt="num_comments_not_showing" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/d0f28e19-6f20-4903-a4eb-cee0415aa384">
-The number of comments are not showing on the landing page as the likes does. I've tried to implement different codes to get this to work but ended up leaving that because lack of time.
 <br>
+<img width="492" alt="adding_about_page" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/5f017984-ebb7-44f4-85dc-6062fb2ba1b4">
+<br>
+
+#### number of comments not showing
+<img width="565" alt="error-screenshot" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/c9b667d7-2eac-4087-a149-03a5b8cf6a37">
+<br>
+The number of comments were not showing on the landing page as the likes did. The correct number was not showing (only 0) so the count function was not working properly, I got it to work when I realized that I had a "duplicate", so when deleting {{ total comments }} it worked properly!
+<br>
+
+#### page header image
 I initially wanted the page header to be a image with text on top, so I had it in my static/images file and styled the header in my CSS file. This did not work when the app was deployed and I could not upload the image to my Cloudinary account either, so I ended up leaving that out and just having a plain color instead.
 <img width="947" alt="image-header-testing" src="https://github.com/mristimaki/lets-eat-PP4/assets/121927123/2ab3e36e-2bbc-43d3-9736-bbc25d784418">
+
+### Unfixed Bugs
+
+There are no unfixed bugs
 
 ## Deployment
 
