@@ -5,8 +5,8 @@ from .views import EditComment, RecipeDetail
 
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
-    path('<slug:slug>/', views.RecipeDetail.as_view(), name="post_detail"),
-    path('like/<slug:slug>', views.PostLikes.as_view(), name="post_likes"),
+    path('<slug:slug>/', views.RecipeDetail.as_view(), name='post_detail'),
+    path('like/<slug:slug>', views.PostLikes.as_view(), name='post_likes'),
     path('edit_comment/<int:comment_id>', EditComment.as_view(), name='edit_comment'),
-    path('post_detail/<slug:slug>/', RecipeDetail.as_view(), name='post_detail'),
+    path('post_detail/<int:pk>/', RecipeDetail.as_view(), name='post_detail'),
 ]
