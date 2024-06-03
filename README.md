@@ -189,39 +189,40 @@ I initially wanted the page header to be a image with text on top, so I had it i
 ### Heroku Deployment
 This site was deployed to Heroku. The steps to deploy are as follows.
 <br>
-- Creating the Heroku App:
-- <br>
-  - Select "Create New App" in Heroku
-  - Choose a name for your app and select the location
-- Attach the Postgres database:
-<br>
-  - In the Resources tab, under add-ons, type in Postgres and select the Heroku Postgres option
-- Prepare the environment and settings.py file:
-  - In the Settings tab, click on Reveal Config Vars and copy the url next to DATABASE_URL
-  - In your Gitpod workspace, create an env.py file in the main directory.
-  - Add the SECRET_KEY value to the Config Vars in Heroku
-  - Update the settings.py file to import the env file and add the SECRET_KEY and DATABASE_URL file paths.
-  - Update the Config Vars with the Cloudinary url, and adding it into the settinge.py file
-  - In settings.py add the following sections:
-    * Cloudinary to the INSTALLED_APPS list
-    * STATICFILE_STORAGE
-    * STATICFILES_DIRS
-    * STATIC_ROOT
-    * MEDIA_URL
-    * DEFAULT_FILE_STORAGE
-    * TEMPLATES_DIR
-    * Update DIRS in TEMPLATES with TEMPLATES_DIR
-    * Update ALLOWED_HOSTS with ['app_name.heroku.com, 'localhost'] (Heroku has started to add random numbers to the deployed link, so double check on your Heroku that you have the correct link)
-<br>
-- Store Static and Media files in Cloudinary and Deploy to Heroku:
-  - Create three directories in the main directory: media, storage and templates
-  - Create a file named "Procfile" in the main directory and add the following:
-    * web: gunicorn project-name.wsgi
-  - Log in to Heroku using the terminal heroku login -i
-  - Then run the following command: **heroku git:remote -a your_app_name** and replace your_app_name with the name of your Heroku app. This will link the app to your Gitpd terminal.
-  - After linking your app to your workspace, you can then deploy new versions of the app by running the command **git push heroku main** and your app will be deployed to Heroku
+1. Create a Heroku account
+2. Create new app on Heroku:
+   - Go to Heroku Dashboard
+   - Click "New"
+   - Click "Create new app"
+   - Choose a name for your app
+   - Choose a region
+   - Click "Create app"
+3. In the app click "Deploy"
+   - Connect your Heroku account to your GitHub account and then click "Deploy"
 
 The live link can be found here: https://lets-eat-0870a5c41672.herokuapp.com/
+
+### Cloudinary
+
+1. Go to Cloudinary
+2. Sign in
+3. Go to Dashboard
+4. At the top of the page you can find your cloud name, API Key and API Secret
+5. To see the API secret, hover over the API key and click on the eye
+6. Copy the key and paste to config vars in Heroku and to env.py file in your LMS
+
+### ElephantSQL
+
+To create Database in ElephantSQL:
+1. Go to ElephantSQL homepage
+2. Create new instance
+3. Select a name for your database and choose the free plan
+4. Click "Select Region"
+5. Choose a region
+6. Click "Review"
+7. Click "Create Instance"
+8. Choose the name of your database to open the dashboard
+9. Use the URL of your database to connect to your Django project
 
 #### Clone GitHub repositry instructions
 It is possible to clone this repositry, to be able to work alongside me for this project it is required to have a free GitHub account and then go trough the steps as follows. 
